@@ -108,7 +108,15 @@ export const BentoGridItem = ({
                     </div>
 
 
-                    {/*{id ===2 && <GlobeDemo/>}*/}
+                    {id === 2 && (
+                        <div className="absolute inset-0 rounded-3xl overflow-hidden">
+                            <img
+                                src="/world.jpg"
+                                alt="Showcase image"
+                                className="w-full h-full object-cover object-center"
+                            />
+                        </div>
+                    )}
 
                     {id === 3 && (
                         <div className="flex lg:gap-5 w-fit absolute -right-3 lg:-right-2 mr-3">
@@ -116,7 +124,7 @@ export const BentoGridItem = ({
                                 {['React.js', 'Next.js', 'TypeScript'].map(
                                     (item) => (
                                         <span key={item}
-                                              className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                                              className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                                         {item}
                                     </span>
                                     )
@@ -128,7 +136,7 @@ export const BentoGridItem = ({
                                 {['React.js', 'Next.js', 'TypeScript'].map(
                                     (item) => (
                                         <span key={item}
-                                              className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                                              className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                                         {item}
                                     </span>
                                     )
